@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CalculadoraDeInteres from './assets/components/calculadora de interes/CalculadoraDeInteres';
 
-function AppFuntional (){
+function App (){
     return(
       <>
       <CalculadoraDeInteres/>
@@ -12,4 +12,4 @@ function AppFuntional (){
 
 }
 
-export default AppFuntional
+export default App
