@@ -1,0 +1,25 @@
+h2{
+    color: black;
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.titulo-tabla{
+    align-self: center;
+
+}
+
+.tabla-container{
+   
+    text-align: center;
+    justify-content: center;
+}
+
+.form{
+    min-width: 300px;
+}

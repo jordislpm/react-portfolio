@@ -5,6 +5,7 @@ import Tabla from './Tabla';
 import Notas from './Notas';
 import Foot from './Foot';
 import InteresFijo from './InteresFijo';
+import './calculadoraDeInteres.css'
 
 
 
@@ -55,6 +56,7 @@ function CalculadoraDeInteres (){
       if(monto > 0 && cuota > 0 && interesAnual > 0){
 
 
+
      
       setMeses([])
       e.preventDefault()
@@ -100,7 +102,7 @@ function CalculadoraDeInteres (){
       setInteresFijo(`${C}`)
 
     } else(
-      alert(" Para hacer el calculo todos los campos deben tener valores")
+      alert("Para hacer el calculo todos los campos deben tener valores.")
     )
       
     }
@@ -109,12 +111,12 @@ function CalculadoraDeInteres (){
     
 
     return(
-    <div className="row justify-content-lg-center bg-light text-dark pt-4">
-      <di>
+    <div className="header row justify-content-lg-center bg-light text-dark pt-4">
+      <div>
       <h2 className="h2 text-center">Calculadora Financiera de Cuotas de prestamos</h2>
-      </di>
+      </div>
       <div className="row mt-3 mb-4 px-0 mx-0">
-        <div className="col my-2 mx-4 bg-dark text-white border border-primary rounded" >
+        <div className="form-container col my-2 mx-4 bg-dark text-white border border-primary rounded" >
         <Form 
           cuota={cuota}
           monto={monto} 

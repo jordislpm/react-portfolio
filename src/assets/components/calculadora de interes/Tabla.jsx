@@ -1,10 +1,13 @@
-
+import { useState } from 'react'
 import React from 'react';
 import Mes from './Mes';
 function Tabla(props){
 
-    return(<table className="table table-dark table-striped border border-primary">
-            <thead>
+ 
+
+    return(<div className='tabla-container'><h2 className='titulo-tabla'>Tabla de amortizacion</h2>
+    <table className="table table-dark table-striped border border-primary">
+            <thead id="tabla-indice-id" className='tabla-indice'>
               <tr>
                 <th scope="col">#Mes No.</th>
                 <th scope="col">Cuota</th>
@@ -24,7 +27,7 @@ function Tabla(props){
               Balance={me.Balance}/>
             })}
           </tbody>
-          </table>
+          </table></div>
         )
     
 }
